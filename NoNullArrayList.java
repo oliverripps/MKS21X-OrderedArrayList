@@ -10,13 +10,17 @@ public class NoNullArrayList<T> extends ArrayList<T>{
     if (s==null){
       throw new IllegalArgumentException();
     }
-    else{return super.set(x,s);}
+    else{
+      return super.set(x,s);
+    }
   }
   public boolean add(T s){
     if(s==null){
       throw new IllegalArgumentException();
     }
-    else{return super.add(s);}
+    else{
+      return super.add(s);
+    }
   }
   public void add(int x, T s){
     if (s==null){
