@@ -11,7 +11,7 @@ public class Driver {
 			if (!(""+array).equals("[y, z]")) System.out.println(++c+". You aren't setting properly when NoNullArrayList.set(index, T) is called.");
 		} catch (Exception e) {
 			System.out.println(++c+". You are producing a "+e.getClass().getCanonicalName()+" when adding/setting to a NoNullArrayList.");
-		}
+	}
 
 		try {
 			try {
