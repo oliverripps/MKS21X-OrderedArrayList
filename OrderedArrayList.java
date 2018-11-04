@@ -18,4 +18,17 @@ public class OrderedArrayList<T> extends NoNullArrayList<T>{
     super.add(0, value);
     return true;
  }
+  public void add(int index, T value) {
+    this.add(value);
+ }
+
+  public T set(int i, T value) {
+    if (value == null) {
+      throw new IllegalArgumentException("Cannot set value to null");
+   }
+    T old = this.get(i);
+    super.remove(i);
+    add(value);
+    return old;
+ }
 }
